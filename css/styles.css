@@ -37,7 +37,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #maincontent {
   background-color: #f3f3f3;
-  min-height: 100%;
 }
 #footer {
   background-color: #444;
@@ -169,17 +168,53 @@ nav h1 a {
   margin: 0;
   font-size: 11pt;
 }
+
 #restaurants-list li a {
-  background-color: orange;
-  border-bottom: 3px solid #eee;
-  color: #fff;
-  display: inline-block;
-  font-size: 10pt;
-  margin: 15px 0 0;
-  padding: 8px 30px 10px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+	background-color: orange;
+	border-bottom: 3px solid #eee;
+	color: #fff;
+	display: inline-block;
+	font-size: 10pt;
+	margin: 15px 0 0;
+	padding: 8px 30px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*Ajusted one column View for Mobile and Tablets*/
+ul#restaurants-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul#restaurants-list > li {
+    width: 100%;
+}
+
+/*Main Desktop View*/
+@media screen and (min-width:1000px) {
+
+ul#restaurants-list > li {
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+}
+
+/*Main Mobile View*/
+@media screen and (max-width:450px) {
+
+#neighborhoods-select {
+	width: 180px;
+	padding-left: 20px;
+}
+
+#cuisines-select {
+		width: 130px;
+		padding-right: 20px;
+}
+
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -192,10 +227,8 @@ nav h1 a {
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 87%;
-  position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
 }
 .inside #map {
   background-color: #ccc;
@@ -239,11 +272,9 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 40px 40px;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -272,4 +303,36 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/*Main Desktop View*/
+@media screen and (min-width:1000px) {
+
+
+}
+
+/*Restaurant Mobile View*/
+@media screen and (min-width:450px) {
+
+	#maincontent {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#map-container {
+		width: 100%;
+
+	}
+
+	#restaurant-container {
+		width: 100%;
+	}
+
+	#reviews-container {
+		width: 100%;
+	}
+
+
+
 }
