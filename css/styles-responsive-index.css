@@ -1,0 +1,74 @@
+
+/*Ajusted one column View for Desktop , Mobile and Tablets*/
+ul#restaurants-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*Main Desktop View*/
+@media screen and (min-width:1001px) {
+
+ul#restaurants-list > li {
+	width: 20%;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ====================== Map ====================== */
+#map {
+  height: 400px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+}
+/*Main Tablet View*/
+@media screen and (min-width:651px) and (max-width: 1000px) {
+	img {
+		padding-top: 10px;
+	}
+
+	ul#restaurants-list > li {
+		width: 40%;
+		padding-top: 5px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/* ====================== Map ====================== */
+	#map {
+	  height: 300px;
+	  width: 100%;
+	  background-color: #ccc;
+	}
+
+}
+
+/*Main Mobile View*/
+@media screen and (max-width:650px) {
+img {
+	padding-top: 10px;
+}
+
+ul#restaurants-list > li {
+    width: 100%;
+}
+
+#neighborhoods-select {
+	width: 180px;
+	padding-left: 20px;
+}
+
+#cuisines-select {
+		width: 130px;
+		padding-right: 20px;
+}
+
+#map {
+  height: 250px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+}

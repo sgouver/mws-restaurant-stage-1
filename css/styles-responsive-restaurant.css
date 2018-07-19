@@ -1,0 +1,42 @@
+	#infoContainer {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+/*Main Desktop View*/
+@media screen and (min-width:1000px) {
+
+
+}
+
+/*Restaurant Mobile View*/
+@media screen and (min-width:650px) {
+
+	#restaurant-cuisine {
+		width: 100%;
+	}
+
+	.inside #map-container {
+	  background: blue none repeat scroll 0 0;
+		height: 30vh;
+		width: 100%;
+		position: relative;
+		z-index: 7;
+	}
+
+	.inside #map {
+	  background-color: #ccc;
+	  height: 100%;
+	  width: 100%;
+		top: 130px;
+	}
+
+	#restaurant-container {
+		width: 100%;
+	}
+
+	#reviews-container {
+		width: 100%;
+	}
+
+}
