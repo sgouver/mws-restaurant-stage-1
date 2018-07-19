@@ -38,6 +38,10 @@
 		margin-top: 48vh;
 	}
 
+	#reviews-container{
+		margin-bottom: 50px;
+	}
+
 	#restaurant-container, #reviews-container {
 		width: 100%;
 		background-color: #eee;
