@@ -47,6 +47,12 @@ ul#restaurants-list > li {
 
 /*Main Mobile View*/
 @media screen and (max-width:650px) {
+
+nav > h1 {
+	font-size: 1.5em;
+	padding: 3vh 3vh;
+}
+
 img {
 	padding-top: 10px;
 }
@@ -65,10 +71,17 @@ ul#restaurants-list > li {
 		padding-right: 20px;
 }
 
+#map-container {
+	height: 40vh;
+	width: 100%;
+	top: 0;
+	position: relative;
+	z-index: 1;
+}
+
 #map {
-  height: 250px;
+  height: 100%;
   width: 100%;
-  background-color: #ccc;
 }
 
 }

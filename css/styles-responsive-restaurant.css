@@ -1,15 +1,12 @@
+
 #maincontent {
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
 }
 
-	#infoContainer {
-		z-index: 8;
-		background-color: #eee;
-		width: 100%;
-		padding: 0;
-	}
+.box {
+	width: 100%;
+}
 
 /*Main Desktop View*/
 @media screen and (min-width:1000px) {
@@ -19,33 +16,34 @@
 
 /*Restaurant Mobile View*/
 @media screen and (min-width:650px) {
-
+   h1 {
+		 font-size: 3em;
+		 padding: 1vh 1vh;
+	 }
 	.inside #map-container {
 	  background: blue none repeat scroll 0 0;
-		top: 0;
 		height: 40vh;
 		width: 100%;
 		top: 150px;
 		position: fixed;
-		z-index: 0;
+		z-index: 1;
 	}
 
 	.inside #map {
-	  background-color: #ccc;
 	  height: 100%;
 	  width: 100%;
 	}
 
-	#infoContainer {
+	#restaurant-container {
 		margin-top: 48vh;
 	}
 
-	#restaurant-container {
+	#restaurant-container, #reviews-container {
 		width: 100%;
-	}
-
-	#reviews-container {
-		width: 100%;
+		background-color: #eee;
+		display: block;
+		position: relative;
+		z-index: 500;
 	}
 
 }

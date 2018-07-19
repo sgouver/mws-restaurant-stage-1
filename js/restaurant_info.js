@@ -154,6 +154,7 @@ createReviewHTML = (review) => {
 
   name.innerHTML = review.name;
   tContainer.classList.add("reviewTitle");
+  tContainer.classList.add("box");
   tContainer.appendChild(name);
 
   const date = document.createElement('p');
@@ -167,13 +168,15 @@ createReviewHTML = (review) => {
   rating.innerHTML = `Rating: ${review.rating}`;
   const rContainer = document.createElement('div');
   rContainer.classList.add("reviewRating");
+  rContainer.classList.add("box");
   rContainer.appendChild(rating);
   li.appendChild(rContainer);
 
   const comments = document.createElement('p');
   const cContainer = document.createElement('div');
+  cContainer.classList.add("box");
   cContainer.classList.add("reviewComments");
-  
+
 
   comments.innerHTML = review.comments;
   cContainer.appendChild(comments);
