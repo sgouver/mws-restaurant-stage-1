@@ -39,7 +39,7 @@ h1 {
 }
 
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+	width: 100%;
 }
 #maincontent {
   background-color: #f3f3f3;
@@ -204,7 +204,8 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
+	z-index: 100;
 }
 #restaurant-name {
   color: #f18200;

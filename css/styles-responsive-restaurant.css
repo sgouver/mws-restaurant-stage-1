@@ -1,9 +1,14 @@
+#maincontent {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
 	#infoContainer {
-		display: flex;
-		flex-wrap: wrap;
-		position: sticky;
 		z-index: 8;
 		background-color: #eee;
+		width: 100%;
+		padding: 0;
 	}
 
 /*Main Desktop View*/
@@ -18,8 +23,9 @@
 	.inside #map-container {
 	  background: blue none repeat scroll 0 0;
 		top: 0;
-		height: 30vh;
+		height: 40vh;
 		width: 100%;
+		top: 150px;
 		position: fixed;
 		z-index: 0;
 	}
@@ -28,11 +34,10 @@
 	  background-color: #ccc;
 	  height: 100%;
 	  width: 100%;
-		top: 130px;
 	}
 
 	#infoContainer {
-		margin-top: 35vh;
+		margin-top: 48vh;
 	}
 
 	#restaurant-container {
