@@ -1,6 +1,9 @@
 	#infoContainer {
 		display: flex;
 		flex-wrap: wrap;
+		position: sticky;
+		z-index: 8;
+		background-color: #eee;
 	}
 
 /*Main Desktop View*/
@@ -12,16 +15,13 @@
 /*Restaurant Mobile View*/
 @media screen and (min-width:650px) {
 
-	#restaurant-cuisine {
-		width: 100%;
-	}
-
 	.inside #map-container {
 	  background: blue none repeat scroll 0 0;
+		top: 0;
 		height: 30vh;
 		width: 100%;
-		position: relative;
-		z-index: 7;
+		position: fixed;
+		z-index: 0;
 	}
 
 	.inside #map {
@@ -29,6 +29,10 @@
 	  height: 100%;
 	  width: 100%;
 		top: 130px;
+	}
+
+	#infoContainer {
+		margin-top: 35vh;
 	}
 
 	#restaurant-container {
