@@ -25,7 +25,7 @@ The project is a responsive Restaurant Review site :
   - Dynamically set alt image attributes
   - Set labels where needed
   - set "tabindex" for improved navigation
-  - 100% in Google Chrome Audit
+  - 100% in Google Chrome a11y Audit
 
 ## Contributing
 
