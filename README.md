@@ -27,6 +27,9 @@ The project is a responsive Restaurant Review site :
   - set "tabindex" for improved navigation
   - 100% in Google Chrome a11y Audit
 
+- Website test devices :
+    Galaxy S5, IPad, Desktop
+
 ## Contributing
 
 - There is a gap between the menu and the screen in 'restaurant.html '.
