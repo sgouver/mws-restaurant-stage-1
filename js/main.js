@@ -162,10 +162,12 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.id = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = restaurant.name;
 
   const imageMobile = document.createElement('img');
   imageMobile.id = 'restaurant-img-mobile';
   imageMobile.src = DBHelper.imageUrlForMobileRestaurant(restaurant);
+  imageMobile.alt = restaurant.name;
 
   li.append(imageMobile);
   li.append(image);
@@ -205,13 +207,23 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 };
-/* addMarkersToMap = (restaurants = self.restaurants) => {
-  restaurants.forEach(restaurant => {
-    // Add marker to the map
-    const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.map);
-    google.maps.event.addListener(marker, 'click', () => {
-      window.location.href = marker.url
-    });
-    self.markers.push(marker);
+
+/* service worler */
+
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('./sw.js')
+  .then((reg) => {
+    if (reg.installing) {
+      console.log ('serviceWorker installing');
+    } else if (reg.waiting) {
+      console.log ('serviceWorker installed');
+    } else if (reg.active) {
+      console.log ('serviceWorker is active');
+    }
+      console.log ('Registration completed. The scope is' + reg.scope);
+
+  }).catch((error) => {
+    console.log ('Reagistration failed' + error);
   });
-} */
+
+}

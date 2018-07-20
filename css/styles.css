@@ -239,7 +239,7 @@ nav h1 a {
 }
 
 #restaurant-hours td {
-	font-size: 2em;
+	font-size: 1.6em;
   color: #585454;
 	padding-left: 2em;
 }
@@ -313,4 +313,5 @@ nav h1 a {
 
 .reviewComments > p {
 	padding: 0 2em 2em 2em;
+	font-size: 1.4em;
 }
