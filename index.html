@@ -18,19 +18,19 @@
   </header>
 
   <main id="maincontent">
-    <section tabindex="-1" id="map-container" role="application">
+    <section tabindex="-1" id="map-container" area-role="map-area">
       <div tabindex="-1" id="map" aria-hidden="true"></div>
     </section>
     <section>
       <div class="filter-options">
-        <select tabindex="1" id="neighborhoods-select" aria-labelledby="neighborhoods" onchange="updateRestaurants()">
-          <option value="all">All Neighborhoods</option>
+        <select id="neighborhoods-select" aria-labelledby="select neighborhoods" onchange="updateRestaurants()">
+          <option tabindex="0" value="all">All Neighborhoods</option>
         </select>
-        <select tabindex="2" id="cuisines-select" aria-labelledby="cuisines" onchange="updateRestaurants()">
-          <option value="all">All Cuisines</option>
+        <select id="cuisines-select" aria-labelledby="select cuisines" onchange="updateRestaurants()">
+          <option tabindex="0" value="all">All Cuisines</option>
         </select>
       </div>
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" tabindex="0"></ul>
     </section>
   </main>
   <script type="application/javascript" charset="utf-8" src="leaflet/leaflet.js"></script>

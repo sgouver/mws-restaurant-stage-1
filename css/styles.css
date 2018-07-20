@@ -10,8 +10,8 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
 }
+
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.1em;
@@ -151,7 +151,7 @@ nav h1 a {
 }
 
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #b36305;
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -196,7 +196,7 @@ nav h1 a {
 }
 
 #restaurant-name {
-  color: #f18200;
+  color: #b96503;
   font-family: Arial,sans-serif;
   font-size: 2.5em;
   font-weight: 200;
