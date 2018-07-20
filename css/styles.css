@@ -10,6 +10,7 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
+	position:fixed;
 }
 
 ul, li {
@@ -196,7 +197,7 @@ nav h1 a {
 }
 
 #restaurant-name {
-  color: #b96503;
+  color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 2.5em;
   font-weight: 200;
