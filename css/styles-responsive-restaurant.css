@@ -1,4 +1,5 @@
 
+
 #map {
 	height: 100%;
 	width: 100%;
@@ -30,14 +31,19 @@
 	 z-index: 1;
  }
 
- #restaurant-img {
-	 display: block;
-	 margin-left: auto;
-	 margin-right: auto;
-	 width: 80%;
-	 height: 40%;
-	 padding-top: 2em;
+ #restaurant-img-mobile {
+	 display: none;
  }
+
+ #restaurant-img {
+	 border-radius: 60px 0;
+	 max-width: 100%;
+	 display: block;
+		margin-left: auto;
+		margin-right: auto;
+	 padding-bottom: 2em
+ }
+
  .reviewTitle > p {
 	 padding-left: 10vw;
  }
@@ -75,6 +81,20 @@
 		top: 140px;
 		position: fixed;
 		z-index: 1;
+	}
+
+	#restaurant-img-mobile {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 60px 0;
+		width: 80%;
+		height: 40%;
+		padding-top: 2em;
+	}
+
+	#restaurant-img {
+		display: none;
 	}
 
 	#restaurant-container {

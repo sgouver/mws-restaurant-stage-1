@@ -46,18 +46,22 @@ ul#restaurants-list {
 	}
 
 	nav > h1 {
-		font-size: 1.5em;
+		font-size: 2em;
 		padding: 3vh 3vh;
 	}
 
-	.restaurant-img {
+	#restaurant-img-mobile {
+		display: none;
+
+	}
+
+	#restaurant-img {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		width: 80%;
-		height: 20vh;
+		height: 40%;
 		padding-top: 2em;
-
 	}
 
 }
@@ -72,17 +76,21 @@ ul#restaurants-list {
 	}
 
 	nav > h1 {
-		font-size: 1.5em;
+		font-size: 1.8em;
 		padding: 3vh 3vh;
 	}
 
-	.restaurant-img {
+	#restaurant-img-mobile {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		width: 80%;
-		height: 20vh;
+		height: 25vw;
 		padding-top: 2em;
+	}
+
+	#restaurant-img {
+		display: none;
 	}
 
 }
@@ -95,12 +103,17 @@ ul#restaurants-list {
 		padding: 3vh 3vh;
 	}
 
-	.restaurant-img {
+	#restaurant-img-mobile {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		width: 80%;
-		height: 25vh;
+		height: 40vw;
 		padding-top: 2em;
 	}
+
+	#restaurant-img {
+		display: none;
+	}
+
 }
