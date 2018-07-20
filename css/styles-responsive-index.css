@@ -1,64 +1,10 @@
 
 /*Ajusted one column View for Desktop , Mobile and Tablets*/
-ul#restaurants-list {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-/*Main Desktop View*/
-@media screen and (min-width:1001px) {
-
-ul#restaurants-list > li {
-	width: 20%;
-	padding: 10px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-/* ====================== Map ====================== */
-#map {
-  height: 400px;
-  width: 100%;
-  background-color: #ccc;
-}
-
-}
-/*Main Tablet View*/
-@media screen and (min-width:651px) and (max-width: 1000px) {
-	img {
-		padding-top: 10px;
-	}
-
-	ul#restaurants-list > li {
-		width: 40%;
-		padding-top: 5px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	/* ====================== Map ====================== */
-	#map {
-	  height: 300px;
-	  width: 100%;
-	  background-color: #ccc;
-	}
-
-}
-
-/*Main Mobile View*/
-@media screen and (max-width:650px) {
-
-nav > h1 {
-	font-size: 1.5em;
-	padding: 3vh 3vh;
-}
-
-img {
-	padding-top: 10px;
-}
-
-ul#restaurants-list > li {
-    width: 100%;
+#restaurants-list {
+	display: block;
+	margin: 0;
+	max-width : 100%;
+	max-height: 100%;
 }
 
 #neighborhoods-select {
@@ -84,4 +30,77 @@ ul#restaurants-list > li {
   width: 100%;
 }
 
+ul#restaurants-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*Main Desktop View*/
+@media screen and (min-width:1001px) {
+
+	ul#restaurants-list > li {
+		width: 20%;
+		padding: 10px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	nav > h1 {
+		font-size: 1.5em;
+		padding: 3vh 3vh;
+	}
+
+	.restaurant-img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		height: 20vh;
+		padding-top: 2em;
+
+	}
+
+}
+/*Main Tablet View*/
+@media screen and (min-width:639px) and (max-width: 1000px) {
+
+	ul#restaurants-list > li {
+		width: 38%;
+		padding-top: 5px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	nav > h1 {
+		font-size: 1.5em;
+		padding: 3vh 3vh;
+	}
+
+	.restaurant-img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		height: 20vh;
+		padding-top: 2em;
+	}
+
+}
+
+/*Main Mobile View*/
+@media screen and (max-width:640px) {
+
+	nav > h1 {
+		font-size: 1.5em;
+		padding: 3vh 3vh;
+	}
+
+	.restaurant-img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		height: 25vh;
+		padding-top: 2em;
+	}
 }

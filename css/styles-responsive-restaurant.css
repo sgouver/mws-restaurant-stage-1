@@ -1,4 +1,9 @@
 
+#map {
+	height: 100%;
+	width: 100%;
+}
+
 #maincontent {
 	display: flex;
 	flex-wrap: wrap;
@@ -9,40 +14,81 @@
 }
 
 /*Main Desktop View*/
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1001px) {
 
+	h1 {
+		font-size: 3em;
+		margin: 30px;
+	}
+ #map-container {
+	 background: blue none repeat scroll 0 0;
+	 height: 100%;
+	 width: 63%;
+	 right: 0;
+	 top: 0;
+	 position: fixed;
+	 z-index: 1;
+ }
+
+ #restaurant-img {
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: 80%;
+	 height: 40%;
+	 padding-top: 2em;
+ }
+ .reviewTitle > p {
+	 padding-left: 10vw;
+ }
+
+ #restaurant-container {
+ }
+
+ #reviews-container{
+	 margin-bottom: 50px;
+ }
+
+ #restaurantInfoColumn {
+	 margin-top: 130px;
+	 width: 40%;
+	 left: 0;
+	 background-color: #eee;
+	 display: block;
+	 position: relative;
+	 z-index: 500;
+	 max-width: 100%;
+ }
 
 }
 
-/*Restaurant Mobile View*/
-@media screen and (min-width:650px) {
+/*Restaurant Tablet & Mobile View*/
+@media screen and (max-width:1000px) {
    h1 {
 		 font-size: 3em;
 		 padding: 1vh 1vh;
 	 }
-	.inside #map-container {
+	#map-container {
 	  background: blue none repeat scroll 0 0;
-		height: 40vh;
+		height: 60vw;
 		width: 100%;
-		top: 150px;
+		top: 140px;
 		position: fixed;
 		z-index: 1;
 	}
 
-	.inside #map {
-	  height: 100%;
-	  width: 100%;
-	}
-
 	#restaurant-container {
-		margin-top: 48vh;
 	}
 
 	#reviews-container{
 		margin-bottom: 50px;
 	}
+	.reviewTitle > p {
+		padding-left: 20em;
+	}
 
-	#restaurant-container, #reviews-container {
+	#restaurantInfoColumn {
+		margin-top: 70vw;
 		width: 100%;
 		background-color: #eee;
 		display: block;
