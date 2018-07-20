@@ -11,17 +11,17 @@
 </head>
 
 <body>
-  <header>
+  <header tabindex="0">
     <nav>
-      <h1 tabindex="0"><a href="/">Restaurant Reviews</a></h1>
+      <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main id="maincontent">
+  <main tabindex="1" id="maincontent">
     <section id="map-container" area-role="map-area">
-      <div id="map" aria-hidden="true"></div>
+      <div  id="map" aria-hidden="true"></div>
     </section>
-    <section>
+    <section tabindex="2" >
       <div class="filter-options">
         <select id="neighborhoods-select" role="tablist" aria-labelledby="select neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
