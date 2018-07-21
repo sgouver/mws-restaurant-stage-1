@@ -115,5 +115,23 @@ ul#restaurants-list {
 	#restaurant-img {
 		display: none;
 	}
+}
 
+@media screen and (max-width:360px) {
+	.filter-options{
+		height: 100%;
+		padding-top: 5px;
+	}
+
+	#neighborhoods-select {
+		width:70%;
+		display: block;
+		position: relative;
+	}
+
+	#cuisines-select {
+		width: 70%;
+		display: block;
+		position: relative;
+	}
 }

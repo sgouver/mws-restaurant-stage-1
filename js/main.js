@@ -162,17 +162,17 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.id = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  image.alt = restaurant.name;
+  image.alt = 'Image of ' + restaurant.name + ' restaurant';
 
   const imageMobile = document.createElement('img');
   imageMobile.id = 'restaurant-img-mobile';
   imageMobile.src = DBHelper.imageUrlForMobileRestaurant(restaurant);
-  imageMobile.alt = restaurant.name;
+  imageMobile.alt = 'Image of ' + restaurant.name + ' restaurant';
 
   li.append(imageMobile);
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 

@@ -73,11 +73,11 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const image = document.getElementById('restaurant-img');
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  image.alt = restaurant.name;
+  image.alt = "Image of" + restaurant.name + "restaurant";
 
   const imageMobile = document.getElementById('restaurant-img-mobile');
   imageMobile.src = DBHelper.imageUrlForMobileRestaurant(restaurant);
-  imageMobile.alt = restaurant.name;
+  imageMobile.alt = "Image of " + restaurant.name + " restaurant";
 
 
 

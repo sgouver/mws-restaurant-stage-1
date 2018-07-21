@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-var staticCacheName = 'rest-static-v4';
+var staticCacheName = 'rest-static-v5';
 
 self.addEventListener('install', function(event) {
   // TODO: cache /skeleton rather than the root page

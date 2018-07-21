@@ -4,8 +4,7 @@
 }
 
 #maincontent {
-	display: flex;
-	flex-wrap: wrap;
+	height: 100%;
 }
 
 .box {
@@ -29,6 +28,10 @@
 	 z-index: 1;
  }
 
+ #breadcrumb {
+	 font-size: 2em;
+ }
+
  #restaurant-img-mobile {
 	 display: none;
  }
@@ -46,16 +49,13 @@
 	 padding-left: 10vw;
  }
 
- #restaurant-container {
- }
-
  #reviews-container{
 	 margin-bottom: 50px;
  }
 
  #restaurantInfoColumn {
-	 margin-top: 130px;
 	 width: 40%;
+	 height: 100%;
 	 left: 0;
 	 background-color: #eee;
 	 display: block;
@@ -69,16 +69,20 @@
 /*Restaurant Tablet & Mobile View*/
 @media screen and (max-width:1000px) {
    h1 {
-		 font-size: 3em;
+		 font-size: 2.5em;
 		 padding: 1vh 1vh;
 	 }
+
+	#breadcrumb {
+		font-size: 1.5em;
+	}
+
 	#map-container {
 	  background: blue none repeat scroll 0 0;
 		height: 60vw;
-		width: 100%;
-		top: 140px;
-		position: fixed;
+		position: relative;
 		z-index: 1;
+		width: 100%;
 	}
 
 	#restaurant-img-mobile {
@@ -95,19 +99,11 @@
 		display: none;
 	}
 
-	#restaurant-container {
-	}
-
-	#reviews-container{
-		margin-bottom: 50px;
-	}
 	.reviewTitle > p {
-		padding-left: 20em;
+		padding-left: 30vw;
 	}
 
 	#restaurantInfoColumn {
-		margin-top: 70vw;
-		width: 100%;
 		background-color: #f2f2f2;
 		display: block;
 		position: relative;
